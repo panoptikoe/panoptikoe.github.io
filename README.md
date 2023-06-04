@@ -1,7 +1,9 @@
 # panoptikoe.github.io
 
-# super cool stukje tekst
+https://www.ogd.nl
 
-test test
+https://cloud.4every1.net
 
-## werkt dit?
+https://outlook.com
+
+https://tweakers.net
