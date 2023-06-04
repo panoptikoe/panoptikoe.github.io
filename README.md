@@ -1,4 +1,4 @@
-# Panopticon.com
+# Panoptikoen.com
 <https://www.ogd.nl>
 
 <https://cloud.4every1.net>
