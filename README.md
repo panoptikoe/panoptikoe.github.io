@@ -4,6 +4,6 @@
 
 <https://cloud.4every1.net>
 
-https://outlook.com
+<https://outlook.com>
 
-https://tweakers.net
+<https://tweakers.net>
