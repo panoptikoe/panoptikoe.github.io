@@ -1,5 +1,4 @@
-# panoptikoe.github.io
-
+# Panopticon.com
 <https://www.ogd.nl>
 
 <https://cloud.4every1.net>
