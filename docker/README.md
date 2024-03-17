@@ -1,6 +1,7 @@
 ## Docker-compose
 1. Unifi
-```---
+```
+---
 version: "2.1"
 services:
   unificontroller:
@@ -22,4 +23,5 @@ services:
       - 8880:8880
       - 6789:6789
       - 5514:5514/udp
-    restart: unless-stopped```
+    restart: unless-stopped
+```
