@@ -20,4 +20,4 @@
 3. [Buienradar](https://buienradar.nl)
 
 ## Docker-compose
-1. [Docker](/docker/README.md
+1. [Docker](/docker/README.md)
