@@ -184,15 +184,6 @@ services:
       - 9000:9000/tcp   # Graylog web interface and REST API
       - 1514:1514/tcp   # Syslog
       - 1514:1514/udp   # Syslog
-      - 1515:1515/udp   # Unifi
-      - 1516:1516/udp   # Mikrotik
-      - 1517:1517/udp   # Proxmox
-      - 1518:1518/udp   # Pimoxone
-      - 1519:1519/udp   # Pimoxtwo
-      - 1520:1520/udp   # Graylog
-      - 1521:1521/udp   # OPNSense
-      - 12201:12201/tcp # GELF
-      - 12201:12201/udp # GELF
 ```
 ## Home Assistant
 ```
