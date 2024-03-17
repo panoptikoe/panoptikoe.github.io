@@ -1,3 +1,9 @@
+body {
+  background: red;
+  /* or, using CSS variables */
+  --md-default-bg-color: red;
+}
+
 ## Docker-compose
 ## Unifi
 ```
