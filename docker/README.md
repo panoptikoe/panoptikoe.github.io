@@ -1,3 +1,4 @@
+<html>
 body {
   background: red;
   /* or, using CSS variables */
@@ -336,3 +337,4 @@ services:
 volumes:
   uptime-kuma:
 ```
+</html>
