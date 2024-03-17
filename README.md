@@ -7,9 +7,9 @@
 
 <html>
         <ol>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-            <li>Fourth item</li>
+            <li>[Azure Portal](https://portal.azure.com)</li>
+            <li>[Microsoft 365 Portal](https://admin.microsoft.com)</li>
+            <li>[Github](https://github.com)</li>
+            <li>[Tweakers](https://tweakers.net)</li>
         </ol>
 </html>
