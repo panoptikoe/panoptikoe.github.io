@@ -1,6 +1,6 @@
 ## Docker-compose
+## Unifi
 ```
-1. Unifi
 ---
 version: "2.1"
 services:
@@ -24,4 +24,23 @@ services:
       - 6789:6789
       - 5514:5514/udp
     restart: unless-stopped
+```
+## Gitea
+```
+version: "3"
+
+services:
+  gitea:
+    container_name: gitea
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    hostname: gitea
+    ports:
+      - 3000:3000 #webgui
+      - 2222:22 #ssh
+    image: gitea/gitea:latest
+    restart: unless-stopped
+    volumes:
+      - ./gitea/data:/data
 ```
