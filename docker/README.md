@@ -160,7 +160,7 @@ services:
       # CHANGE ME (must be at least 16 characters)!
       GRAYLOG_PASSWORD_SECRET: "somepasswordpepper"
       # Password: admin
-      GRAYLOG_ROOT_PASSWORD_SHA2: "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"
+      GRAYLOG_ROOT_PASSWORD_SHA2: ""
       GRAYLOG_HTTP_BIND_ADDRESS: "0.0.0.0:9000"
       GRAYLOG_HTTP_EXTERNAL_URI: "http://localhost:9000/"
       GRAYLOG_ELASTICSEARCH_HOSTS: "http://opensearch:9200"
@@ -258,40 +258,19 @@ volumes:
 ```
 ## Heimdall
 ```
-version: "3.4"
+version: "2.1"
 services:
-  broker:
-    image: docker.io/library/redis:7
-    restart: unless-stopped
-    volumes:
-      - redisdata:/data
-
-  webserver:
-    image: ghcr.io/paperless-ngx/paperless-ngx:latest
-    restart: unless-stopped
-    depends_on:
-      - broker
-    ports:
-      - "8000:8000"
-    healthcheck:
-      test: ["CMD", "curl", "-fs", "-S", "--max-time", "2", "http://localhost:8000"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-    volumes:
-      - data:/usr/src/paperless/data
-      - media:/usr/src/paperless/media
-      - ./export:/usr/src/paperless/export
-      - ./consume:/usr/src/paperless/consume
-    env_file: docker-compose.env
+  heimdall:
+    image: lscr.io/linuxserver/heimdall:latest
+    container_name: heimdall
     environment:
-      PAPERLESS_REDIS: redis://broker:6379
-
-
-volumes:
-  data:
-  media:
-  redisdata:
+      - TZ=Europe/Amsterdam
+    volumes:
+      - ./config:/config
+    ports:
+      - 9999:80
+      - 9998:444
+    restart: unless-stopped
 ```
 ## Torrent
 ```
