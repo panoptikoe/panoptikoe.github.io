@@ -1,3 +1,3 @@
 # hello world
-| thing | URL |
-| ------------ | --- |
+
+[Azure Portal](https://portal.azure.com)
