@@ -15,8 +15,6 @@
 1. [Cloudflare](https://cloudflare.com)
 2. [Crowdsec](https://app.crowdsec.net/)
 3. [Zerotier](https://my.zerotier.com)
-4. [OPNSense](https://opnsense.local.panoptikoen.com)
-5. [Traefik](https://traefik-zt.local.panoptikoen.com)
 
 ## Other stuff
 1. [Metal-Archives](https://metal-archives.com)
